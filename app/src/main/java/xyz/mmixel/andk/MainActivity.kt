@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        Toast.makeText(this, "The die is rolled!", Toast.LENGTH_SHORT).show()
+        val resultInt: Int = (1..6).random()
+        textView.text = resultInt.toString()
     }
 }
